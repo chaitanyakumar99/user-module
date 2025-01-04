@@ -4,8 +4,8 @@ import Login from "./components/login";
 import Dashboard from "./components/Dashboard";
 
 const App = () => {
-  
-  return(
+
+  return (
     <>
       <Router>
         <Routes>
