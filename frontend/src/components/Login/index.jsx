@@ -30,6 +30,7 @@ const Login = () => {
     }
   };
 
+  
   const handleOtpChange = (e) => {
     const { value } = e.target;
     //regex to validate weather its number or not
