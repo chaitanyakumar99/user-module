@@ -17,10 +17,11 @@ const Login = () => {
     //regex to validate weather its number or not
     const numRegex = /^[0-9]+$/;
 
-    //check if mobile number is valid
+    //check if mobile number is valid number are not 10 digit number
     if (value === "" || numRegex.test(value)) {
       if (value.length > 10) {
-        setError("Enter a valid mobile number");
+        //vallidation
+        setError("Enter a 10 digit valid mobile number");
       } else {
         setError("");
         setPhoneNumber(value);
@@ -30,7 +31,7 @@ const Login = () => {
     }
   };
 
-  
+
   const handleOtpChange = (e) => {
     const { value } = e.target;
     //regex to validate weather its number or not
@@ -52,6 +53,9 @@ const Login = () => {
   const sendOtp = async () => {
     try {
       const response = await axios.post(
+
+        //send the otp to mobile number
+        //Method:-POST
         `http://localhost:8080/api/v1/generateOtp`,
         { phoneNumber }
       );
@@ -66,12 +70,15 @@ const Login = () => {
   const verifyOtp = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:8080/api/v1/verifyOtp`,
+
+        //send the otp to validation
+          //Method:-POST
+          `http://localhost:8080/api/v1/verifyOtp`,
         { phoneNumber, otp }
       );
       console.log(response);
       navigate("/dashboard");
-    } catch (error) {}
+    } catch (error) { }
   };
 
   const handleSubmit = (e) => {
