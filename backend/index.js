@@ -1,7 +1,7 @@
 const app = require("./src/app");
 const connectDb = require("./src/config/configDb");
 
-app.listen(8080, (err) => {
+app.listen(process.env.port, (err) => {
     if(err){
         console.log(err);
     }
