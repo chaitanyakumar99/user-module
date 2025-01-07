@@ -1,4 +1,5 @@
-//middleware:-
+//middleware:-It's a series of functions that are used to handle requests and responses,
+//            and can perform a variety of tasks
 
 const User = require("../models/userModel");
 const jwt = require('jsonwebtoken')
