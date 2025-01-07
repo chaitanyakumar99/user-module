@@ -38,7 +38,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/PradipKhamkar/Mobile_OTP_Authentication
+   git clone https://github.com/chaitanyakumar99/Mobile_OTP_Authentication
    ```
 
 2. Change into the project directory:
