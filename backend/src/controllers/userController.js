@@ -20,7 +20,7 @@ const generateOtp = async (req, res) => {
     }
     // check weather the user already exist
     let user = await User.findOne({ phoneNumber });
-    // if user don't exist create new user
+    // if user don't exist create new user  
     if (!user) {
       user = await User.create({
         phoneNumber: phoneNumber,
