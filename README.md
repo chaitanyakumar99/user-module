@@ -110,4 +110,4 @@ The following are the API endpoints available in this project:
 Thanks to Fast2SMS, for providing their amazing services for this project.
 Special thanks to the MERN Stack and communities.
 
-Happy coding! 👩‍💻👨‍💻
+Happy coding! 👩‍💻👨‍💻
