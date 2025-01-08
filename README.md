@@ -34,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    bash
-   git clone https://github.com/chaitanyakumar99/user-module
+   git clone https://github.com/PradipKhamkar/Mobile_OTP_Authentication
    
 
 2. Change into the project directory:
@@ -109,5 +109,6 @@ The following are the API endpoints available in this project:
 
 Thanks to Fast2SMS, for providing their amazing services for this project.
 Special thanks to the MERN Stack and communities.
+
 
 Happy coding! 👩‍💻👨‍💻
