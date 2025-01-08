@@ -78,7 +78,7 @@ const Login = () => {
       );
       console.log(response);
       navigate("/dashboard");
-    } catch (error) { }
+    } catch (error) { } 
   };
 
   const handleSubmit = (e) => {
