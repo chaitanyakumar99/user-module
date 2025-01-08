@@ -27,7 +27,6 @@ Before you begin, ensure you have met the following requirements:
 - 🚀 Node.js and npm (Node Package Manager) installed.
 - 📦 MongoDB database for storing user data.
 - 📲 Fast2SMS account and credentials for OTP verification.
-- 🗺 IPinfo access token for IP address data
 
 ## Installation
 
@@ -93,7 +92,7 @@ The following are the API endpoints available in this project:
    npm start
    
 
-3. Access the application in your web browser at http://localhost:8080.9
+3. Access the application in your web browser at http://localhost:4000.
 
 ## Technologies
 
