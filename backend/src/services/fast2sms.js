@@ -23,6 +23,7 @@ const sendMsg = async (phoneNumber, otp) => {
     }
 }
 
+
 module.exports = {
     sendMsg
 }
