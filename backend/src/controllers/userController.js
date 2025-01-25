@@ -27,6 +27,7 @@ const generateOtp = async (req, res) => {
         phoneNumber: phoneNumber,
       });
  
+      
     }
     // Generate 6 digit otp by calling createOtp method
     const otp = createOTP();
