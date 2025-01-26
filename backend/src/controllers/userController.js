@@ -1,7 +1,6 @@
 //funtions
 //api functions
 
-
 const User = require("../models/userModel");
 const { sendMsg } = require("../services/fast2sms");
 const createToken = require("../services/jwtToken");
