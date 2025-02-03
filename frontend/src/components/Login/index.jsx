@@ -3,6 +3,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+console.log(import.meta.env.VITE_API_URL)
+
 const Login = () => {
   const navigate = useNavigate();
   const [otpSent, setOtpSent] = useState(false);
@@ -56,7 +58,7 @@ const Login = () => {
 
         //send the otp to mobile number
         //Method:-POST
-        `http://localhost:8080/api/v1/generateOtp`,
+        `${import.meta.env.VITE_API_URL}/api/v1/generateOtp`,
         { phoneNumber }
       );
       setOtpSent(true);
@@ -73,7 +75,7 @@ const Login = () => {
 
         //send the otp to validation
           //Method:-POST
-          `http://localhost:8080/api/v1/verifyOtp`,
+          `${import.meta.env.VITE_API_URL}/api/v1/verifyOtp`,
         { phoneNumber, otp }
       );
       console.log(response);
