@@ -7,6 +7,7 @@ const sendMsg = async (phoneNumber, otp) => {
         route: 'otp',
         variables_values: otp,
     }
+    
 
     const config = {
         headers: {
