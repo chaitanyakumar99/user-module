@@ -8,7 +8,6 @@ const sendMsg = async (phoneNumber, otp) => {
         variables_values: otp,
     }
     
-
     const config = {
         headers: {
             "authorization": process.env.FAST_API_KEY,
@@ -23,7 +22,6 @@ const sendMsg = async (phoneNumber, otp) => {
         console.log(error);
     }
 }
-
 
 module.exports = {
     sendMsg
